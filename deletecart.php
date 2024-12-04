@@ -6,9 +6,9 @@ if(isset($_POST['id']) && !empty($_POST['id'])) {
     $id = $_POST['id'];
 
     // Hapus data berdasarkan id
-    $result = mysqli_query($conn, "DELETE FROM cart WHERE id = $id");
+    $ambil = mysqli_query($conn, "DELETE FROM cart WHERE id = $id");
 
-    if($result) {
+    if($ambil) {
         echo "<script>
             alert ('Data Berhasil Di Hapus');
             window.location.replace('cart.php');

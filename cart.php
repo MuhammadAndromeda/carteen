@@ -150,7 +150,7 @@ $i = 1;
                     <td><?php echo $lined['nama']; ?></td>
                     <td>
                         <form action="deletecart.php" method="post">
-                            <input type="hidden" name="id" value="<?= $baris['id']; ?>">
+                            <input type="hidden" name="id" value="<?= $lined['id']; ?>">
                             <button type="submit" name="cart">Delete</button>
                         </form>
                     </td>
