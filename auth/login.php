@@ -5,14 +5,6 @@ session_start(); // -> Harus ditambahkan ketika menggunakan session
 include('function.php');
 
 if(isset($_SESSION['login'])) {
-
-    if($isAdmin === true){
-        header('location: ../adminmarket.php');
-        exit;
-    } elseif($isAdmin === false){
-        header('location: ../usermarket.php');
-        exit;
-    }
 }
 
 if(isset($_POST['login'])) {
