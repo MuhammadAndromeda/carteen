@@ -137,7 +137,7 @@ $i = 1;
                     <th>Price</th>
                     <th>Description</th>
                     <th>Seller Name</th>
-                    <th>Action</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>
