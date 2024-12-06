@@ -13,11 +13,9 @@ function register($request) {
         return;
     }
 
-    // AMBIL PW LALU SIMPAN DI VARIABLE
     $pw = mysqli_real_escape_string($conn, $request['pw']);
     $pw2 = mysqli_real_escape_string($conn, $request['pw2']);
 
-    // CEK PW1 === PW2 ?
     if ($pw !== $pw2) {
         echo "<script>
             alert('Password tidak sama!');
@@ -25,7 +23,6 @@ function register($request) {
         return;
     }
 
-    // HASH PW -> mengacak pw
     $pw = password_hash($pw, PASSWORD_DEFAULT);
     $pw2 = password_hash($pw2, PASSWORD_DEFAULT);
 
