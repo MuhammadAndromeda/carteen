@@ -67,14 +67,11 @@ function login($request) {
             // Set sesi login
             session_start();
             $_SESSION['login'] = true;
-
-            // Cek nilai kolom 'seller' (isAdmin)
+            
             if ($dataFetch['seller'] == 1) {
-                // Jika isAdmin bernilai true, redirect ke halaman adminmarket
                 header('location: ../adminmarket.php');
                 exit;
             } elseif ($dataFetch['seller'] == 0) {
-                // Jika isAdmin bernilai false, redirect ke halaman usermarket
                 header('location: ../usermarket.php');
                 exit;
             } else{
@@ -82,6 +79,7 @@ function login($request) {
                 alert('Data Tidak Ditemukan!');
             </script>";
             }
+            
         } else {
             // Password tidak sesuai
             echo "<script>
