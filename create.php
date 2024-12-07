@@ -82,7 +82,7 @@ if(isset($_GET['submit'])) {
 </head>
 <body>
     <nav>
-        <a href="adminmarket.php">All Products</a>
+        <a href="adminmarket.php">Home</a>
         <h1>CARTEEN MARKETPLACE</h1>
         <form action="auth/logout.php" method="post">
             <button type="submit">Log Out</button>
